@@ -1,7 +1,7 @@
 {
   "name": "paccino/php-nanocore",
   "description": "A custom PHP framework with CLI support and modular structure.",
-  "type": "library",
+  "type": "project",
   "license": "MIT",
   "require": {
     "php": "^8.0",
