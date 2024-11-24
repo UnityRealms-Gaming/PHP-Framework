@@ -1,0 +1,13 @@
+# Rewrite Engine aktivieren
+RewriteEngine On
+
+# Alle Anfragen auf den public-Ordner weiterleiten
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/$1 [L]
+
+# Schütze sensible Dateien
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>

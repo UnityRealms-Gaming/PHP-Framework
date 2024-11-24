@@ -1,0 +1,25 @@
+{
+  "name": "paccino/php-framework",
+  "description": "A custom PHP framework with CLI support and modular structure.",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": "^8.0",
+    "smarty/smarty": "^5.4",
+    "ext-pdo": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Framework\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {},
+  "bin": [
+    "framework"
+  ]
+}

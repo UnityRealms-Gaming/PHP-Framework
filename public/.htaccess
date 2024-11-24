@@ -1,0 +1,14 @@
+# Weiterleitung aller Anfragen an die index.php
+RewriteEngine On
+RewriteBase /
+
+# Alle Anfragen an index.php weiterleiten, es sei denn, es handelt sich um eine existierende Datei oder Verzeichnis
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
+
+# Schütze .htaccess vor Zugriff
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
