@@ -1,5 +1,5 @@
 {
-  "name": "paccino/nanocore",
+  "name": "paccino/php-nanocore",
   "description": "A custom PHP framework with CLI support and modular structure.",
   "type": "library",
   "license": "MIT",
